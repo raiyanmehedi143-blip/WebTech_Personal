@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <img src="resources/Screenshot 2026-10-12 231330.png" width="700" height="200">
+    <h3>Register</h3>
+    <form action="form-handler.html" method="post">
+        <fieldset>
+            <legend>Names</legend>
+            <label for="first-name">First Name:</label>
+            <input type="test" class="name-field" id="first-name" name="fn" placeholder="Enter your first name" minlength="3" required />
+            <br />
+            <label for="last-name">Last Name:</label>
+            <input type="test" class="name-field" id="last-name" name="ln" placeholder="Enter your last name" minlength="3" required />
+
+        </fieldset>
+        <br/>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required />
+        <br/>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" /> Male
+        <input type="radio" name="gender" id="female" /> Female
+        <input type="radio" name="gender" id="other" /> Other
+        <br/>
+        <!--
+        <select>
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="em" placeholder="Enter your email" required/>
+        <br/>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="ps" placeholder="Enter your password" required />
+        <br/>
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="cps" placeholder="Enter your confirm password" required />
+        <br/>
+        <input type="checkbox" /> Agree to <a href="terms.html">Terms & Conditions</a>
+        <br/>
+        <label for="Rating">Rating</label>
+        <input type="range" name="Rating" min="0" max="10"/>
+        <br/>
+        <textarea name="comments" id="comments" rows="4" cols="40" placeholder="Write your comment here!"></textarea>
+        <br/>
+        <button>Click Me!</button>
+        <br/>
+        <br/>
+        <input type="submit" value="Create Account" />
+        <input type="reset" />
+
+    </form>
+
+
+</body>
+</html>
